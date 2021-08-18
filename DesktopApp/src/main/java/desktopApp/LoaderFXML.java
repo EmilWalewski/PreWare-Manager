@@ -17,6 +17,7 @@ public class LoaderFXML {
     private AnnotationConfigApplicationContext context;
 
     public FXMLLoader getLoader(String path){
+        System.out.println("sdf");
         FXMLLoader loader = new FXMLLoader();
         loader.setControllerFactory(context::getBean);
         loader.setLocation(getClass().getResource(path));
